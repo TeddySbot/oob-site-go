@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - OOB</title>
+    <link rel="stylesheet" href="/static/style/general.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/reglement">Règlement</a></li>
+                <li><a href="/boutique">Boutique</a></li>
+                <li><a href="/lore">Lore</a></li>
+                <li><a href="/liens-utiles">Liens Utiles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bienvenue sur OOB</h1>
+        <p>Découvrez l'univers unique de notre serveur Garry's Mod. Rejoignez-nous pour des aventures inoubliables !</p>
+        
+        <!-- Statut du serveur -->
+        <div class="section">
+            <h2>Statut du Serveur</h2>
+            <p id="server-status">Chargement en cours...</p>
+            <p id="player-count"></p>
+        </div>
+
+        <div class="section">
+            <h2>À propos</h2>
+            <p>OOB est un serveur communautaire dédié à Garry's Mod. Nous offrons une expérience de jeu immersive avec des règles équitables et un environnement convivial.</p>
+            <a href="/reglement" class="button">Voir le Règlement</a>
+        </div>
+        <br>
+    </main>
+    <footer>
+        <p>&copy; OOB. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Script pour interroger le serveur -->
+    <script src="/js/index.js"></script>
+</body>
+</html>
