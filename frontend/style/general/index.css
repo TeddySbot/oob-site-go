@@ -6,13 +6,11 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a; /* Fond gris foncé */
-    color: #ffffff; /* Texte blanc */
+    font-family: 'Poppins', sans-serif;
+    background-color: #cecdcd; /* Fond blanc */
+    color: #333; /* Texte sombre */
     line-height: 1.6;
 }
-
-/* Header
 
 /* Styles de base pour la navbar */
 .navbar {
@@ -20,12 +18,12 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #0099e6; /* Couleur de fond de la navbar */
+    background: linear-gradient(90deg, #0099e6, #00a8ff);
     padding: 1rem;
 }
 
 .navbar a {
-    color: inherit;
+    color: #ffffff; /* Texte blanc */
     text-decoration: none;
 }
 
@@ -66,7 +64,7 @@ body {
         flex-direction: column; /* Empiler les éléments verticalement */
         align-items: center;
         padding: 20px;
-        background-color: #0077b3; /* Couleur de fond du menu déroulant */
+        background-color: #000000; /* Couleur de fond du menu déroulant (noir) */
     }
 
     .navbar label {
@@ -81,6 +79,7 @@ body {
         max-height: 300px; /* Hauteur maximale du menu déroulant */
     }
 }
+
 /* Main Content */
 main {
     padding: 1rem; /* Réduire le padding sur les petits écrans */
@@ -91,24 +90,24 @@ main {
 
 h1 {
     font-size: 2rem; /* Taille de police réduite pour les petits écrans */
-    color: #00a8ff; /* Titre en bleu */
+    color: #007BFF; /* Titre en bleu */
     margin-bottom: 1rem;
     text-align: center;
 }
 
 p {
     font-size: 1rem; /* Taille de police réduite pour les petits écrans */
-    color: #cccccc; /* Texte gris clair */
+    color: #555; /* Texte gris foncé */
     margin-bottom: 1rem;
     line-height: 1.6;
 }
 
 /* Footer */
 footer {
-    background-color: #1a1a1a;
+    background-color: #000000; /* Couleur de fond du footer (noir) */
     padding: 1rem 0;
     text-align: center;
-    border-top: 2px solid #00a8ff; /* Bordure bleue claire */
+    border-top: 2px solid #007BFF; /* Bordure bleue */
     position: fixed; /* Fixe le footer en bas */
     bottom: 0;
     left: 0;
@@ -117,7 +116,7 @@ footer {
 }
 
 footer p {
-    color: #cccccc;
+    color: #ffffff; /* Texte blanc */
     font-size: 0.9rem; /* Taille de police réduite pour les petits écrans */
 }
 
@@ -125,7 +124,7 @@ footer p {
 .button {
     display: inline-block;
     padding: 0.8rem 1.5rem;
-    background-color: #00a8ff;
+    background-color: #007BFF; /* Couleur bleue */
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
@@ -134,25 +133,23 @@ footer p {
 }
 
 .button:hover {
-    background-color: #0099e6; /* Bleu plus foncé au survol */
+    background-color: #0056b3; /* Bleu plus foncé au survol */
 }
 
 /* Section Styles */
 .section {
     margin-bottom: 1.5rem; /* Réduire la marge sur les petits écrans */
     padding: 1rem; /* Réduire le padding sur les petits écrans */
-    background-color: #1a1a1a;
+    background-color: #ffffff; /* Fond blanc */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .section h2 {
     font-size: 1.5rem; /* Taille de police réduite pour les petits écrans */
-    color: #00ffcc; /* Titre de section en cyan clair */
+    color: #007BFF; /* Titre de section en bleu */
     margin-bottom: 1rem;
 }
-
-
 
 /* Media Queries pour les écrans de petite taille (téléphones) */
 @media (max-width: 768px) {
@@ -196,21 +193,22 @@ footer p {
     }
 }
 
-
 ul {
     list-style: none;
-  }
-  
-  .example-2 {
+}
+
+.example-2 {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .example-2 .icon-content {
+}
+
+.example-2 .icon-content {
     margin: 0 10px;
     position: relative;
-  }
-  .example-2 .icon-content .tooltip {
+}
+
+.example-2 .icon-content .tooltip {
     position: absolute;
     top: -30px;
     left: 50%;
@@ -222,13 +220,15 @@ ul {
     visibility: hidden;
     font-size: 14px;
     transition: all 0.3s ease;
-  }
-  .example-2 .icon-content:hover .tooltip {
+}
+
+.example-2 .icon-content:hover .tooltip {
     opacity: 1;
     visibility: visible;
     top: -50px;
-  }
-  .example-2 .icon-content a {
+}
+
+.example-2 .icon-content a {
     position: relative;
     overflow: hidden;
     display: flex;
@@ -238,52 +238,56 @@ ul {
     height: 50px;
     border-radius: 50%;
     color: #4d4d4d;
-    background-color: #fff;
+    background-color: #ffffff; /* Fond blanc pour les icônes */
     transition: all 0.3s ease-in-out;
-  }
-  .example-2 .icon-content a:hover {
+}
+
+.example-2 .icon-content a:hover {
     box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
-  }
-  .example-2 .icon-content a svg {
+}
+
+.example-2 .icon-content a svg {
     position: relative;
     z-index: 1;
     width: 30px;
     height: 30px;
-  }
-  .example-2 .icon-content a:hover {
+}
+
+.example-2 .icon-content a:hover {
     color: white;
-  }
-  .example-2 .icon-content a .filled {
+}
+
+.example-2 .icon-content a .filled {
     position: absolute;
     top: auto;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 0;
-    background-color: #000;
+    background-color: #000000; /* Fond noir pour les icônes */
     transition: all 0.3s ease-in-out;
-  }
-  .example-2 .icon-content a:hover .filled {
-    height: 100%;
-  }
-  
-  .example-2 .icon-content a[data-social="discord"] .filled,
-  .example-2 .icon-content a[data-social="discord"] ~ .tooltip {
-    background-color: #7289da;
-  }
-  
-  .example-2 .icon-content a[data-social="steam"] .filled,
-  .example-2 .icon-content a[data-social="steam"] ~ .tooltip {
-    background-color: #171d25;
-  }
-  .example-2 .icon-content a[data-social="instagram"] .filled,
-  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
-    background: linear-gradient(45deg, #405de6, #e1306c);
+}
 
-    
-  }
-  .example-2 .icon-content a[data-social="youtube"] .filled,
-  .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
-    background: linear-gradient(45deg, #405de6, #e1306c);
-  }
-  
+.example-2 .icon-content a:hover .filled {
+    height: 100%;
+}
+
+.example-2 .icon-content a[data-social="discord"] .filled,
+.example-2 .icon-content a[data-social="discord"] ~ .tooltip {
+    background-color: #7289da; /* Couleur Discord */
+}
+
+.example-2 .icon-content a[data-social="steam"] .filled,
+.example-2 .icon-content a[data-social="steam"] ~ .tooltip {
+    background-color: #171d25; /* Couleur Steam */
+}
+
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(45deg, #405de6, #e1306c); /* Dégradé Instagram */
+}
+
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+    background: linear-gradient(45deg, #ff0000, #ff0000); /* Dégradé YouTube */
+}
