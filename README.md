@@ -6,7 +6,7 @@ Bienvenue dans le projet **TeddysBot OOB Site Go** ! Ce site est en cours de dé
 
 Voici la structure des répertoires de ce projet :
 
-
+```
 Directory structure:
 └── teddysbot-oob-site-go/
     ├── go.mod
@@ -38,6 +38,7 @@ Directory structure:
             └── vampire/
                 ├── reglement-vampire.html
                 └── vampire.html
+```
 
 # Exécution
 
